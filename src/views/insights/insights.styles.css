@@ -1,0 +1,24 @@
+/* insights.styles.css */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure cards stretch to the full height */
+  }
+  
+  .card-img-top {
+    width: 100%; /* Make image width responsive to the card width */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the area, might crop if aspect ratio is different */
+  }
+  
+  .card-body {
+    flex-grow: 1; 
+    height: 100px;
+  }
+  

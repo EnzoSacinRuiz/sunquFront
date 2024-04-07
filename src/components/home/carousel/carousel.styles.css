@@ -1,0 +1,12 @@
+.custom-carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: 'TrialRooftop-Extrabold', sans-serif; /* Fallback font */
+  }

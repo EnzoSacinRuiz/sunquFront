@@ -1,0 +1,36 @@
+.typewritter-text {
+  display: inline-block;
+  overflow: hidden; /* Ensure overflow text is not visible */
+  letter-spacing: 3px;
+  animation: typing 3s steps(30, end) 1s infinite alternate, blink-cursor 0.75s step-end infinite;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 700;
+  border-right: 4px solid orange;
+  box-sizing: border-box;
+  /* Set a max-width if needed, for example based on the longest phrase */
+  max-width: 100%;
+  font-family: 'Trialrooftop-Bold';
+}
+
+@keyframes typing {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes blink-cursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+p{
+  font-family: 'TrialRooftop-Medium';
+}

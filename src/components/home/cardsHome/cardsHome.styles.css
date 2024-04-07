@@ -1,0 +1,56 @@
+h2{
+    font-family: 'TrialRooftop-Extrabold', sans-serif;
+}
+
+h5{
+    font-family: 'TrialRooftop-Bold';
+}
+
+.card-body{
+    font-family: 'TrialRooftop-Regular';
+
+}
+
+p{
+    font-family: 'TrialRooftop-Regular';
+
+}
+
+.card {
+    position: relative;
+    /* Your existing styles for .card */
+    overflow: hidden; /* Ensures that the hover content does not spill outside the card */
+  }
+  
+  .card-hover-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Ensures text and buttons are still clickable */
+  }
+  
+  .card:hover .card-hover-layer {
+    opacity: 1;
+    pointer-events: auto; /* Allows clicking on this layer when it's visible */
+  }
+  
+  .card-body {
+    transition: transform 0.3s ease; /* Keep if you want to keep the lifting effect */
+  }
+  
+  .card:hover .card-body {
+    transform: translateY(-10px); /* Adjust if needed */
+  }
+  
+  
+
+  

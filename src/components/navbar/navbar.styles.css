@@ -1,0 +1,5 @@
+/* Inside fonts.css or another stylesheet */
+.nav-link-custom {
+    font-family: 'TrialRooftop-Medium', sans-serif; /* Fallback font */
+  }
+  

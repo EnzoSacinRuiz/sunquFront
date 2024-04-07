@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'TrialRooftop-Extrabold';
+    src: local('TrialRooftop-Extrabold'),
+         url('./TRIAL_Rooftop-Extrabold-BF64a6319fb5f08.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'TrialRooftop-Medium';
+    src: local('TrialRooftop-Medium'),
+         url('./TRIAL_Rooftop-Medium-BF64a6319f707bb.otf') format('opentype');
+    font-weight: normal; /* or 500 if "medium" is considered font-weight: 500 */
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'TrialRooftop-Bold';
+    src: local('TrialRooftop-Bold'),
+         url('./TRIAL_Rooftop-Bold-BF64a6319fb7a91.otf') format('opentype');
+    font-weight: normal; /* or 500 if "medium" is considered font-weight: 500 */
+    font-style: normal;
+}
+
+
+
+@font-face {
+     font-family: 'TrialRooftop-Regular';
+     src: local('TrialRooftop-Regular'),
+          url('./TRIAL_Rooftop-Regular-BF64a6319fae1cf.otf') format('opentype');
+     font-weight: normal; /* or 500 if "medium" is considered font-weight: 500 */
+     font-style: normal;
+ }
