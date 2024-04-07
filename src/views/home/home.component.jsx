@@ -6,17 +6,34 @@ import CardsHome from '../../components/home/cardsHome/cardsHome';
 import ClientsHome from '../../components/home/clients/clients.component';
 
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 
 
 
 
 function Home() {
+  
+
+  const [details, setDetails] = useState([]);
+
+  useEffect(() => {
+      axios.get('http://localhost:8000/api/products/')
+          .then(res => {
+              setDetails(res.data);
+          })
+          .catch(err => {
+              console.error(err);
+              // Optionally, handle the error in some way
+          });
+  }, []); 
 
     const phrases = ['¿Qué nos mueve?', 'Propósito'];
     const [phraseIndex, setPhraseIndex] = useState(0);
   
     useEffect(() => {
+          console.log(details);
+
       const timer = setTimeout(() => {
         setPhraseIndex((i) => (i + 1) % phrases.length);
       }, 5000); // Change text every 5 seconds
@@ -33,7 +50,7 @@ function Home() {
 
             <TypewritterComponent phrases={phrases} phraseIndex={phraseIndex} />
 
-            <CardsHome/>
+            <CardsHome details={details}/>
 
             <ClientsHome/>
 
