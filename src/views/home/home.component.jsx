@@ -18,7 +18,7 @@ function Home() {
   const [details, setDetails] = useState([]);
 
   useEffect(() => {
-      axios.get('http://localhost:8000/api/products/')
+      axios.get('https://backend.sunquconsultoria.com/api/products/')
           .then(res => {
               setDetails(res.data);
           })

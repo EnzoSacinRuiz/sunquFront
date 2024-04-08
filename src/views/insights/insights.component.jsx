@@ -47,7 +47,7 @@ function Insights() {
     const [details, setDetails] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/api/products/')
+        axios.get('https://backend.sunquconsultoria.com/api/products/')
             .then(res => {
                 setDetails(res.data);
             })
@@ -66,7 +66,7 @@ function Insights() {
         <div key={product.id} className="col-md-4 mb-4">
             <div className="card" >
                 <NavLink to={`/insights/${product.id}`}>
-                    <img src={`http://localhost:8000/api${product.image}`} alt={product.name} className="card-img-top" height="200"/>
+                    <img src={`https://backend.sunquconsultoria.com/api${product.image}`} alt={product.name} className="card-img-top" height="200"/>
                 </NavLink>
                 <div className="card-body">
                     <h5 className="card-title">{product.name}</h5>

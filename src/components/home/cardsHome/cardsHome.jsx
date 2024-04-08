@@ -19,7 +19,7 @@ function CardsHome({ details }) {
             <div className="card">
               
                 <img
-                  src={`http://localhost:8000/api${product.image}`}
+                  src={`https://backend.sunquconsultoria.com/api${product.image}`}
                   alt={product.name}
                   className="card-img-top"
                   height="200"
