@@ -21,7 +21,7 @@ function CarouselComponent (){
                 alt="Second slide"
             />
             <Carousel.Caption className="custom-carousel-caption">
-                <h1>ABORDAMOS LOS DESAFIOS LIBRES DE PREJUICIOS</h1>
+                <h1>NOS ENFOCAMOS EN LA MINIMIZACIÓN DE RIESGO</h1>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>

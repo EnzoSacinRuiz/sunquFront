@@ -2,12 +2,15 @@ import "./nosotros.styles.css"
 
 
 import NavbarComponent from '../../components/navbar/navbar.component';
+import Construction from "../../components/utils/underconstruction/construction.component";
 
 function Nosotros(){
     return (
         <div>
-            <h1>Nosotros!</h1>
             <NavbarComponent/>
+            <Construction/>
+
+
 
         </div>
     )
